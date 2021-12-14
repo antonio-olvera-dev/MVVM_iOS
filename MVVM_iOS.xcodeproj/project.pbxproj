@@ -14,6 +14,12 @@
 		A1F600262768E745009C5C11 /* MVVM_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600252768E745009C5C11 /* MVVM_iOSTests.swift */; };
 		A1F600302768E745009C5C11 /* MVVM_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6002F2768E745009C5C11 /* MVVM_iOSUITests.swift */; };
 		A1F600322768E745009C5C11 /* MVVM_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600312768E745009C5C11 /* MVVM_iOSUITestsLaunchTests.swift */; };
+		A1F600492768F493009C5C11 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600482768F493009C5C11 /* WeatherViewModel.swift */; };
+		A1F6004A2768F493009C5C11 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600482768F493009C5C11 /* WeatherViewModel.swift */; };
+		A1F6004B2768F493009C5C11 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600482768F493009C5C11 /* WeatherViewModel.swift */; };
+		A1F6004E2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */; };
+		A1F6004F2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */; };
+		A1F600502768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,9 @@
 		A1F6002B2768E745009C5C11 /* MVVM_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F6002F2768E745009C5C11 /* MVVM_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_iOSUITests.swift; sourceTree = "<group>"; };
 		A1F600312768E745009C5C11 /* MVVM_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1F600482768F493009C5C11 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		A1F6004C2768F542009C5C11 /* MVVM-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MVVM-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,9 @@
 		A1F600132768E743009C5C11 /* MVVM_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1F6004C2768F542009C5C11 /* MVVM-iOS-Info.plist */,
+				A1F600472768F46B009C5C11 /* WeatherViewModel */,
+				A1F6003E2768F2F8009C5C11 /* Models */,
 				A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */,
 				A1F600162768E743009C5C11 /* ContentView.swift */,
 				A1F600182768E745009C5C11 /* Assets.xcassets */,
@@ -125,6 +137,22 @@
 				A1F600312768E745009C5C11 /* MVVM_iOSUITestsLaunchTests.swift */,
 			);
 			path = MVVM_iOSUITests;
+			sourceTree = "<group>";
+		};
+		A1F6003E2768F2F8009C5C11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1F600472768F46B009C5C11 /* WeatherViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F600482768F493009C5C11 /* WeatherViewModel.swift */,
+			);
+			path = WeatherViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F600172768E743009C5C11 /* ContentView.swift in Sources */,
+				A1F6004E2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
+				A1F600492768F493009C5C11 /* WeatherViewModel.swift in Sources */,
 				A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F6004A2768F493009C5C11 /* WeatherViewModel.swift in Sources */,
 				A1F600262768E745009C5C11 /* MVVM_iOSTests.swift in Sources */,
+				A1F6004F2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F600322768E745009C5C11 /* MVVM_iOSUITestsLaunchTests.swift in Sources */,
+				A1F600502768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
+				A1F6004B2768F493009C5C11 /* WeatherViewModel.swift in Sources */,
 				A1F600302768E745009C5C11 /* MVVM_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +455,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MVVM_iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MVVM-iOS-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +485,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MVVM_iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MVVM-iOS-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

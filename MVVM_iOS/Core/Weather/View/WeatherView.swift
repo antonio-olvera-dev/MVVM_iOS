@@ -9,13 +9,16 @@ import SwiftUI
 
 struct WeatherView: View {
     
+    let controller: WeatherController = WeatherController()
     @StateObject var weatherViewModel = WeatherViewModel()
+    @State var city = "Madrid"
     
     var body: some View {
         ZStack {
             bodyView()
         }.task {
-//             await weatherViewModel.getWeather(city: "Madrid")
+            
+            await weatherViewModel.getWeather(city: city)
         }
     }
     
@@ -37,7 +40,7 @@ struct WeatherView: View {
     
     func description() -> some View {
         return VStack{
-            Text(weatherViewModel.weatherResponseDataModel?.city ?? "No city")
+            Text(weatherViewModel.weatherResponseDataModel?.city ?? city)
                 .foregroundColor(.white)
                 .font(.system(size: 70))
             Text(weatherViewModel.weatherResponseDataModel?.weather.first?.description ?? "No temperature")
@@ -90,12 +93,14 @@ struct WeatherView: View {
             Button(action: {
                 
                 Task.init(){
-                    await weatherViewModel.getWeather(city: "Barcelona")
+                    let newCity = controller.getSwitchCity(currentCity: city)
+                    city = newCity
+                    await weatherViewModel.getWeather(city: newCity)
                     
                 }
                 
             } ) {
-                Text("Barcelona").padding(.all, 12)
+                Text(city == "Madrid" ? "Barcelona":"Madrid").padding(.all, 12)
                     .foregroundColor(.black)
                     .background(Color.white).cornerRadius(30)
             }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A16B3CED276A8A5A00A1F768 /* WeatherControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */; };
 		A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */; };
 		A1F600172768E743009C5C11 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600162768E743009C5C11 /* WeatherView.swift */; };
 		A1F600192768E745009C5C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F600182768E745009C5C11 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControler.swift; sourceTree = "<group>"; };
 		A1F600112768E743009C5C11 /* MVVM_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_iOSApp.swift; sourceTree = "<group>"; };
 		A1F600162768E743009C5C11 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A1F600162768E743009C5C11 /* WeatherView.swift */,
+				A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				A1F600172768E743009C5C11 /* WeatherView.swift in Sources */,
 				A1F6004E2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
 				A1F600492768F493009C5C11 /* WeatherViewModel.swift in Sources */,
+				A16B3CED276A8A5A00A1F768 /* WeatherControler.swift in Sources */,
 				A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,12 +14,15 @@ struct WeatherView: View {
     @State var city = "Madrid"
     
     var body: some View {
-        ZStack {
-            bodyView()
-        }.task {
-            
-            await weatherViewModel.getWeather(city: city)
+        
+        NavigationView{
+            ZStack {
+                bodyView()
+            }.task {
+                await weatherViewModel.getWeather(city: city)
+            }
         }
+        
     }
     
     
@@ -31,6 +34,8 @@ struct WeatherView: View {
             humidity()
             Divider().padding()
             changeCity()
+            Divider().padding()
+            showJson()
             Divider().padding()
             Spacer().padding(.top, 22)
         }
@@ -101,6 +106,17 @@ struct WeatherView: View {
                 
             } ) {
                 Text(city == "Madrid" ? "Barcelona":"Madrid").padding(.all, 12)
+                    .foregroundColor(.black)
+                    .background(Color.white).cornerRadius(30)
+            }
+        }
+    }
+    
+    
+    func showJson() -> some View{
+        return VStack{
+            NavigationLink(destination: WeatherJsonView(json: weatherViewModel.json ?? "ee")){
+                Text("Show Json").padding(.all, 12)
                     .foregroundColor(.black)
                     .background(Color.white).cornerRadius(30)
             }

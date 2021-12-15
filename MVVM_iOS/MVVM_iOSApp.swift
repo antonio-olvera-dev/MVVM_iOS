@@ -11,7 +11,7 @@ import SwiftUI
 struct MVVM_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherView()
         }
     }
 }

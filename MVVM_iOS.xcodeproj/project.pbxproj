@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */; };
-		A1F600172768E743009C5C11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600162768E743009C5C11 /* ContentView.swift */; };
+		A1F600172768E743009C5C11 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600162768E743009C5C11 /* WeatherView.swift */; };
 		A1F600192768E745009C5C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F600182768E745009C5C11 /* Assets.xcassets */; };
 		A1F6001C2768E745009C5C11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F6001B2768E745009C5C11 /* Preview Assets.xcassets */; };
 		A1F600262768E745009C5C11 /* MVVM_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600252768E745009C5C11 /* MVVM_iOSTests.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		A1F600112768E743009C5C11 /* MVVM_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_iOSApp.swift; sourceTree = "<group>"; };
-		A1F600162768E743009C5C11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1F600162768E743009C5C11 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		A1F600182768E745009C5C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F6001B2768E745009C5C11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1F600212768E745009C5C11 /* MVVM_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +80,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A16B3CE7276A7BC000A1F768 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F600162768E743009C5C11 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A16B3CE8276A7C9D00A1F768 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A16B3CE9276A7CB400A1F768 /* Weather */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A16B3CE9276A7CB400A1F768 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				A16B3CEA276A7CCC00A1F768 /* ViewModel */,
+				A16B3CE7276A7BC000A1F768 /* View */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		A16B3CEA276A7CCC00A1F768 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F600482768F493009C5C11 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A16B3CEB276A7CF100A1F768 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6003E2768F2F8009C5C11 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		A1F600082768E743009C5C11 = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +144,10 @@
 		A1F600132768E743009C5C11 /* MVVM_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A16B3CEB276A7CF100A1F768 /* Data */,
+				A16B3CE8276A7C9D00A1F768 /* Core */,
 				A1F6004C2768F542009C5C11 /* MVVM-iOS-Info.plist */,
-				A1F600472768F46B009C5C11 /* WeatherViewModel */,
-				A1F6003E2768F2F8009C5C11 /* Models */,
 				A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */,
-				A1F600162768E743009C5C11 /* ContentView.swift */,
 				A1F600182768E745009C5C11 /* Assets.xcassets */,
 				A1F6001A2768E745009C5C11 /* Preview Content */,
 			);
@@ -145,14 +185,6 @@
 				A1F6004D2768F724009C5C11 /* WeatherResponseDataModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A1F600472768F46B009C5C11 /* WeatherViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A1F600482768F493009C5C11 /* WeatherViewModel.swift */,
-			);
-			path = WeatherViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F600172768E743009C5C11 /* ContentView.swift in Sources */,
+				A1F600172768E743009C5C11 /* WeatherView.swift in Sources */,
 				A1F6004E2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
 				A1F600492768F493009C5C11 /* WeatherViewModel.swift in Sources */,
 				A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */,

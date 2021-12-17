@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11EA917276CFCFD0082949D /* WeatherControlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EA916276CFCFD0082949D /* WeatherControlerTest.swift */; };
 		A16B3CED276A8A5A00A1F768 /* WeatherControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */; };
 		A16B3CF1276A90B700A1F768 /* WeatherJsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CF0276A90B700A1F768 /* WeatherJsonView.swift */; };
 		A16B3CF3276A90D900A1F768 /* WeatherJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CF2276A90D900A1F768 /* WeatherJsonViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11EA916276CFCFD0082949D /* WeatherControlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControlerTest.swift; sourceTree = "<group>"; };
 		A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControler.swift; sourceTree = "<group>"; };
 		A16B3CF0276A90B700A1F768 /* WeatherJsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherJsonView.swift; sourceTree = "<group>"; };
 		A16B3CF2276A90D900A1F768 /* WeatherJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherJsonViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				A1F600162768E743009C5C11 /* WeatherView.swift */,
 				A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */,
+				A11EA916276CFCFD0082949D /* WeatherControlerTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F6004A2768F493009C5C11 /* WeatherViewModel.swift in Sources */,
+				A11EA917276CFCFD0082949D /* WeatherControlerTest.swift in Sources */,
 				A1F600262768E745009C5C11 /* MVVM_iOSTests.swift in Sources */,
 				A1F6004F2768F724009C5C11 /* WeatherResponseDataModel.swift in Sources */,
 			);

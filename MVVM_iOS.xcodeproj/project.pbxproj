@@ -11,6 +11,7 @@
 		A16B3CED276A8A5A00A1F768 /* WeatherControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */; };
 		A16B3CF1276A90B700A1F768 /* WeatherJsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CF0276A90B700A1F768 /* WeatherJsonView.swift */; };
 		A16B3CF3276A90D900A1F768 /* WeatherJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B3CF2276A90D900A1F768 /* WeatherJsonViewController.swift */; };
+		A184F0AC276D03FD00C3B32D /* WeaderViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184F0AB276D03FD00C3B32D /* WeaderViewHeader.swift */; };
 		A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */; };
 		A1F600172768E743009C5C11 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F600162768E743009C5C11 /* WeatherView.swift */; };
 		A1F600192768E745009C5C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F600182768E745009C5C11 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControler.swift; sourceTree = "<group>"; };
 		A16B3CF0276A90B700A1F768 /* WeatherJsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherJsonView.swift; sourceTree = "<group>"; };
 		A16B3CF2276A90D900A1F768 /* WeatherJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherJsonViewController.swift; sourceTree = "<group>"; };
+		A184F0AB276D03FD00C3B32D /* WeaderViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaderViewHeader.swift; sourceTree = "<group>"; };
 		A1F600112768E743009C5C11 /* MVVM_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F600142768E743009C5C11 /* MVVM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_iOSApp.swift; sourceTree = "<group>"; };
 		A1F600162768E743009C5C11 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		A16B3CE7276A7BC000A1F768 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A184F0AA276D03BC00C3B32D /* Components */,
 				A1F600162768E743009C5C11 /* WeatherView.swift */,
 				A16B3CEC276A8A5A00A1F768 /* WeatherControler.swift */,
 				A11EA916276CFCFD0082949D /* WeatherControlerTest.swift */,
@@ -147,6 +150,14 @@
 				A16B3CF2276A90D900A1F768 /* WeatherJsonViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A184F0AA276D03BC00C3B32D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A184F0AB276D03FD00C3B32D /* WeaderViewHeader.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A1F600082768E743009C5C11 = {
@@ -350,6 +361,7 @@
 				A1F600492768F493009C5C11 /* WeatherViewModel.swift in Sources */,
 				A16B3CED276A8A5A00A1F768 /* WeatherControler.swift in Sources */,
 				A1F600152768E743009C5C11 /* MVVM_iOSApp.swift in Sources */,
+				A184F0AC276D03FD00C3B32D /* WeaderViewHeader.swift in Sources */,
 				A16B3CF1276A90B700A1F768 /* WeatherJsonView.swift in Sources */,
 				A16B3CF3276A90D900A1F768 /* WeatherJsonViewController.swift in Sources */,
 			);

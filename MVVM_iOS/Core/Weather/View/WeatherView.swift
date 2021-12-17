@@ -32,7 +32,7 @@ struct WeatherView: View {
             
             WeatherViewHeader(weatherViewModel: weatherViewModel, city: $city)
             Divider().padding()
-            humidity()
+            humidity().tag("humidity")
             Divider().padding()
             changeCity()
             Divider().padding()

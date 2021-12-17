@@ -11,7 +11,7 @@ final class WeatherViewModel:ObservableObject {
     @Published var weatherResponseDataModel: WeatherResponseDataModel?
     @Published var json: String?
     
-    func getWeather(city: String) async {
+    func getWeather(city: String, isTest:Bool = false) async {
         let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=71c3e78149e90edcb26b5c8bf57708fa&units=metric&lang=es")!
         
         do {
@@ -21,6 +21,10 @@ final class WeatherViewModel:ObservableObject {
             let dataModel = try! await JSONDecoder().decode(WeatherResponseDataModel.self, from: data)
             
             DispatchQueue.main.async {
+                self.json = "\(String(describing: dataString))"
+                self.weatherResponseDataModel = dataModel
+            }
+            if(isTest){
                 self.json = "\(String(describing: dataString))"
                 self.weatherResponseDataModel = dataModel
             }

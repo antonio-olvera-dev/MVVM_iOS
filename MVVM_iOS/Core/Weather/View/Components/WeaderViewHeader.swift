@@ -9,7 +9,6 @@ import SwiftUI
 
 struct WeatherViewHeader:View{
     
-    
     @StateObject var weatherViewModel:WeatherViewModel
     @Binding var city:String
     
@@ -18,15 +17,8 @@ struct WeatherViewHeader:View{
         VStack{
             description()
             temperature()
-            
         }
-        
-        
-        
     }
-    
-    
-    
     
     
     func description() -> some View {

@@ -10,7 +10,7 @@ import XCTest
 class WeatherViewModelTest: XCTestCase {
     
     
-    func testInitWeatherViewModel() {
+    func testInitWeatherViewModel() throws{
         
         let weatherViewModel:WeatherViewModel = WeatherViewModel()
         
@@ -22,7 +22,7 @@ class WeatherViewModelTest: XCTestCase {
     }
     
     
-    func testGetWeather() async{
+    func testGetWeather() async throws{
         
         let weatherViewModel:WeatherViewModel = WeatherViewModel()
         await weatherViewModel.getWeather(city: "Madrid", isTest: true)

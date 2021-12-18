@@ -19,7 +19,7 @@ class WeatherControlerTest: XCTestCase {
     }
 
     
-    func testGetSwitchCity()  {
+    func testGetSwitchCity() throws{
         
         let weatherController: WeatherController = WeatherController()
         

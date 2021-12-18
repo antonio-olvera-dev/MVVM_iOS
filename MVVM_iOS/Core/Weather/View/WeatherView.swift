@@ -30,13 +30,13 @@ struct WeatherView: View {
     func bodyView() -> some View{
         return VStack{
             
-            WeatherViewHeader(weatherViewModel: weatherViewModel, city: $city)
+            WeatherViewHeader(weatherViewModel: weatherViewModel, city: $city).tag("WeatherViewHeader")
             Divider().padding()
             humidity().tag("humidity")
             Divider().padding()
-            changeCity()
+            changeCity().tag("changeCity")
             Divider().padding()
-            showJson()
+            showJson().tag("showJson")
             Divider().padding()
             Spacer().padding(.top, 22)
         }

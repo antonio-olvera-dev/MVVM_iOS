@@ -15,8 +15,8 @@ struct WeatherViewHeader:View{
     
     var body: some View {
         VStack{
-            description()
-            temperature()
+            description().tag("description")
+            temperature().tag("temperature")
         }
     }
     
